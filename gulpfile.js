@@ -8,11 +8,13 @@ var livereload = require('gulp-livereload');
 var argv = require('yargs').argv;
 
 var src = 'public/src';
+var lib = 'public/lib';
 var dist = 'public/dist';
 
 var paths = {
 	js: src + '/js/*.js',
-	html: src + '/**/*.html'
+	html: src + '/**/*.html',
+	all_lib: lib + '/**/*'
 };
 
 // 웹서버를 localhost:8000로 실행
@@ -41,12 +43,18 @@ gulp.task('compress-html', function() {
 		.pipe(gulp.dest(dist + '/'));
 });
 
+gulp.task('combine-lib', function() {
+	return gulp.src(paths.all_lib)
+		.pipe(gulp.dest(dist + '/lib'));
+});
+
 // 파일 변경 감지 및 브라우저 재시작
 gulp.task('watch', function() {
 	livereload.listen();
 	gulp.watch(paths.js, ['combine-js']);
 	gulp.watch(paths.html, ['compress-html']);
+	gulp.watch(paths.all_lib, ['combine-lib']);
 	gulp.watch(dist + '/**').on('change', livereload.changed);
 });
 
-gulp.task('default', ['server', 'combine-js', 'compress-html', 'watch']);
+gulp.task('default', ['server', 'combine-js', 'compress-html', 'combine-lib', 'watch']);
