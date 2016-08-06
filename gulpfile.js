@@ -10,6 +10,7 @@ var argv = require('yargs').argv;
 var src = 'public/src';
 var lib = 'public/lib';
 var dist = 'public/dist';
+var build_target = '/var/apps/ui-proto/public';
 
 var paths = {
 	js: src + '/js/*.js',
@@ -43,6 +44,7 @@ gulp.task('compress-html', function() {
 		.pipe(gulp.dest(dist + '/'));
 });
 
+// Lib 파일을 배포한다.
 gulp.task('combine-lib', function() {
 	return gulp.src(paths.all_lib)
 		.pipe(gulp.dest(dist + '/lib'));
@@ -57,4 +59,11 @@ gulp.task('watch', function() {
 	gulp.watch(dist + '/**').on('change', livereload.changed);
 });
 
+gulp.task('build-dist', function() {
+	return gulp.src(dist + '/**/*')
+		.pipe(gulp.dest(build_target + '/'));
+});
+
 gulp.task('default', ['server', 'combine-js', 'compress-html', 'combine-lib', 'watch']);
+
+gulp.task('build', ['combine-js', 'compress-html', 'combine-lib', 'build-dist']);
