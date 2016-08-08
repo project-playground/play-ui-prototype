@@ -14,19 +14,19 @@ var build_target = '/var/apps/ui-proto/public';
 
 var paths = {
 	js: src + '/js/*.js',
+	css: src + '/css/*.css',
 	html: src + '/**/*.html',
 	all_lib: lib + '/**/*'
 };
 
 // 웹서버를 localhost:8000로 실행
 gulp.task('server', function() {
-	var port = (argv.port === undefined) ? 8000 : argv.port;
+	var config = {
+		port: (argv.port === undefined) ? 8000 : argv.port
+	};
+
 	return gulp.src(dist + '/')
-		.pipe(webserver({
-//			host: '211.110.229.240',
-			host: '0.0.0.0',
-			port: port
-		}));
+		.pipe(webserver(config));
 });
 
 // 자바스크립트 파일을 하나로 합치고 압축한다.
@@ -35,6 +35,12 @@ gulp.task('combine-js', function() {
 		.pipe(concat('script.js'))
 		.pipe(uglify())
 		.pipe(gulp.dest(dist + '/js'));
+});
+
+// CSS 파일을 배포한다
+gulp.task('combine-css', function() {
+	return gulp.src(paths.css)
+		.pipe(gulp.dest(dist + '/css'));
 });
 
 // HTML 파일을 압축한다.
@@ -64,6 +70,6 @@ gulp.task('build-dist', function() {
 		.pipe(gulp.dest(build_target + '/'));
 });
 
-gulp.task('default', ['server', 'combine-js', 'compress-html', 'combine-lib', 'watch']);
+gulp.task('default', ['server', 'combine-js', 'combine-css', 'compress-html', 'combine-lib', 'watch']);
 
-gulp.task('build', ['combine-js', 'compress-html', 'combine-lib', 'build-dist']);
+gulp.task('build', ['combine-js', 'combine-css', 'compress-html', 'combine-lib', 'build-dist']);
