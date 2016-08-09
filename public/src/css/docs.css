@@ -64,7 +64,9 @@ pre.console {
   direction:ltr;
 }
 code {
+	/*
   background-color: rgba(0, 0, 0, 0.08);
+  */
   border-radius: 3px;
   display: inline-block;
   font-family: "Monaco","Menlo","Ubuntu Mono","Consolas","source-code-pro",monospace;
@@ -2062,14 +2064,18 @@ code .chunk {
   margin-left: 3em !important;
   margin-right: 3em !important;
   width: auto !important;
+  /*
   max-width: 960px !important;
+  */
 }
 #example .masthead > .container {
   margin-right: 387px !important;
 }
+/*
 #example .main.container {
   margin-right: 387px !important;
 }
+*/
 
 /* Rail Default */
 #example .main.container > .right.rail,
@@ -2141,9 +2147,11 @@ code .chunk {
 @media only screen and (max-width: 1272px) {
 
   /* Resize Main Container */
+  /*
   #example .main.container {
     margin-right: 318px !important;
   }
+  */
 
   /* Resize TOC  */
   #example .full.height > .toc {

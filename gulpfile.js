@@ -60,6 +60,7 @@ gulp.task('combine-lib', function() {
 gulp.task('watch', function() {
 	livereload.listen();
 	gulp.watch(paths.js, ['combine-js']);
+	gulp.watch(paths.css, ['combine-css']);
 	gulp.watch(paths.html, ['compress-html']);
 	gulp.watch(paths.all_lib, ['combine-lib']);
 	gulp.watch(dist + '/**').on('change', livereload.changed);
