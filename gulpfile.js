@@ -22,6 +22,7 @@ var paths = {
 // 웹서버를 localhost:8000로 실행
 gulp.task('server', function() {
 	var config = {
+		host: '0.0.0.0',
 		port: (argv.port === undefined) ? 8000 : argv.port
 	};
 
