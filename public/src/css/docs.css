@@ -3,6 +3,13 @@
              Global
 *******************************/
 
+/*--------------
+     Syntax 
+   Highlighter
+---------------*/
+code.hljs {
+	background: #fff !important;
+}
 
 /*--------------
      Page
