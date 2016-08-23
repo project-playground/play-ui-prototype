@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>play-ui prototype - Button</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link rel="stylesheet" type="text/css" href="lib/semantic/semantic.min.css">
+	<link rel="stylesheet" type="text/css" href="css/docs.css">
+	<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+	<script src="lib/semantic/semantic.min.js"></script>
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/styles/github.min.css">
+	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/highlight.min.js"></script>
+	<script src="js/script.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+</head>
+<body id="example">
+	<div class="ui container">
+		<div class="ui breadcrumb right item">
+		  <a class="section" href="index.html">Home</a>
+		  <i class="right angle icon divider"></i>
+		  <a class="section">Component</a>
+		  <i class="right angle icon divider"></i>
+		  <a class="section">UI Component</a>
+		  <i class="right angle icon divider"></i>
+		  <div class="active section">Button</a>			
+		</div>
+	</div>
+	<div class="ui masthead vertical segment">
+
+		<div class="ui container">
+			<h1 class="ui header">Button</h1>
+			<div class="sub header">Button Component의 Prototype</div>
+		</div>
+	</div>
+
+	<div class="ui main container">
+		<h2 class="ui dividing header">basic button</h2>
+		<div class="example">
+			<h4>basic button</h4>
+			<p>button을 생성할 때에는 다음의 prototype을 사용합니다</p>
+			
+			<div class="html ui top attached segment"><button class="ui button">Follow</button><div class="ui top attached label">Example</div></div>
+			<div class="annotation transition visible">
+				<div class="ui instructive bottom attached segment">
+					<pre><code class="html">&lt;button class="ui button"&gt;Follow&lt;/button&gt;</code></pre>
+				</div>
+			</div>
+		</div>
+		<div class="example">
+			<h4>button attribute</h4>
+			<p>다음의 속성을 사용합니다.</p>
+			<!-- Labeled -->
+			<div class="html ui top attached segment">
+				<div class="ui labeled button">
+					<div class="ui button">
+						<i class="heart icon"></i>
+					</div>
+					<a class="ui basic label">
+						1024
+					</a>
+				</div>
+				<div class="ui top attached label">Labeled</div>
+			</div>
+			<div class="annotation transition visible">
+				<div class="ui instructive bottom attached segment">
+					<pre><code class="html">&lt;div class="ui button" labeld="1024" icon="heart"&gt;&lt;/div&gt;</code></pre>
+				</div>
+			</div>
+			<!-- Icon -->
+			<div class="html ui top attached segment">
+				<button class="ui icon button">
+					<i class="cloud icon"></i>
+				</button>
+				<div class="ui top attached label">Icon</div>
+			</div>
+			<div class="annotation transition visible">
+				<div class="ui instructive bottom attached segment">
+					<pre><code class="html">&lt;button class="ui icon button" icon="cloud"&gt;&lt;/button&gt;</code></pre>
+				</div>
+			</div>
+			<!-- Labeled Icon -->
+			<div class="html ui top attached segment">
+				<button class="ui labeled icon button">
+					<i class="right arrow icon"></i>
+					Next
+				</button>
+				<div class="ui top attached label">Labeled Icon</div>
+			</div>
+			<div class="annotation transition visible">
+				<div class="ui instructive bottom attached segment">
+					<pre><code class="html">&lt;button class="ui labeled icon button" labeledIcon="right arrow"&gt;Next&lt;/button&gt;</code></pre>
+				</div>
+			</div>
+			<!-- Active -->
+			<div class="html ui top attached segment">
+				<button class="ui active button">
+					<i class="user icon"></i>
+					Follow
+				</button>
+				<div class="ui top attached label">Active</div>
+			</div>
+			<div class="annotation transition visible">
+				<div class="ui instructive bottom attached segment">
+					<pre><code class="html">&lt;button class="ui button" icon="user" active="true"&gt;Follow&lt;/button&gt;</code></pre>
+				</div>
+			</div>
+			<!-- Disabled -->
+			<div class="html ui top attached segment">
+				<button class="ui disabled button">
+					<i class="user icon"></i>
+					Follow
+				</button>
+				<div class="ui top attached label">Disabled</div>
+			</div>
+			<div class="annotation transition visible">
+				<div class="ui instructive bottom attached segment">
+					<pre><code class="html">&lt;button class="ui button" icon="user" active="false"&gt;Follow&lt;/button&gt;</code></pre>
+				</div>
+			</div>
+			<!-- Loading -->
+			<div class="html ui top attached segment">
+				<button class="ui loading button">
+				</button>
+				<div class="ui top attached label">Loading</div>
+			</div>
+			<div class="annotation transition visible">
+				<div class="ui instructive bottom attached segment">
+					<pre><code class="html">&lt;button class="ui button" loading="true"&gt;&lt;/button&gt;</code></pre>
+				</div>
+			</div>
+			
+			
+		</div>
+	</div>
+
+			
+
+</body>
+</html>
