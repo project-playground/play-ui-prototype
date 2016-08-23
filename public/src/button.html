@@ -61,7 +61,12 @@
 			  <div class="item">default(생략가능)</div>
 			</div>
 			
-			<div class="html ui top attached segment"><button class="ui primary button">Primary</button><button class="ui secondary button">Secondary</button><button class="ui button">Basic</button><div class="ui top attached label">Markup & Example</div></div>
+			<div class="html ui top attached segment">
+				<button class="ui primary button">Primary</button>
+				<button class="ui secondary button">Secondary</button>
+				<button class="ui button">Basic</button>
+				<div class="ui top attached label">Markup & Example</div>
+			</div>
 			<div class="annotation transition visible">
 				<div class="ui instructive bottom attached segment">
 					<pre><code class="html">&lt;button class="ui primary button"&gt;Primary&lt;/button&gt;
@@ -77,6 +82,61 @@
 &lt;Button&gt;&lt;/Button&gt;</code></pre>
 			</div>
 		</div>
+
+		<h2 class="ui dividing header">labeld/icon</h2>
+		<div class="example">
+			<p>Label/Icon Button에 labeld/icon속성을 사용합니다</p>
+			<p>사용가능한 속성은 아래와 같습니다</p>
+			<div class="ui bulleted list">
+			  <div class="item">labeled</div>
+			  <div class="item">icon</div>
+			  <div class="item">labeledIcon</div>
+			</div>
+			
+			<div class="html ui top attached segment">
+				<div class="ui labeled button">
+					<div class="ui button">
+						<i class="heart icon"></i>
+					</div>
+					<a class="ui basic label">1024</a>
+				</div>
+				<button class="ui icon button">
+					<i class="cloud icon"></i>
+				</button>
+				<button class="ui labeled icon button">
+					<i class="right arrow icon"></i>
+					Next
+				</button>
+				<div class="ui top attached label">Markup & Example</div>
+			</div>
+			<div class="annotation transition visible">
+				<div class="ui instructive bottom attached segment">
+					<pre><code class="html">&lt;div class="ui labeled button"&gt;
+					&lt;div class="ui button"&gt;
+						&lt;i class="heart icon"&gt;&lt;/i&gt;
+					&lt;/div&gt;
+					&lt;a class="ui basic label"&gt;1024&lt;/a&gt;
+				&lt;/div&gt;
+				&lt;button class="ui icon button"&gt;
+					&lt;i class="cloud icon"&gt;&lt;/i&gt;
+				&lt;/button&gt;
+				&lt;button class="ui labeled icon button"&gt;
+					&lt;i class="right arrow icon"&gt;&lt;/i&gt;
+					Next
+				&lt;/button&gt;</code></pre>
+				</div>
+			</div>
+			
+			<div class="ui piled segment">
+			  <h4 class="ui header">Prototype</h4>
+			  <pre><code class="html">&lt;div class="ui button" labeld="1024" icon="heart"&gt;&lt;/div&gt;
+&lt;button class="ui icon button" icon="cloud"&gt;&lt;/button&gt;
+&lt;button class="ui labeled icon button" labeledIcon="right arrow"&gt;Next&lt;/button&gt;</code></pre>
+			</div>
+		</div>
+
+
+
 	</div>
 </body>
 </html>
