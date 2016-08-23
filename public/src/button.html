@@ -112,18 +112,18 @@
 			<div class="annotation transition visible">
 				<div class="ui instructive bottom attached segment">
 					<pre><code class="html">&lt;div class="ui labeled button"&gt;
-					&lt;div class="ui button"&gt;
-						&lt;i class="heart icon"&gt;&lt;/i&gt;
-					&lt;/div&gt;
-					&lt;a class="ui basic label"&gt;1024&lt;/a&gt;
-				&lt;/div&gt;
-				&lt;button class="ui icon button"&gt;
-					&lt;i class="cloud icon"&gt;&lt;/i&gt;
-				&lt;/button&gt;
-				&lt;button class="ui labeled icon button"&gt;
-					&lt;i class="right arrow icon"&gt;&lt;/i&gt;
-					Next
-				&lt;/button&gt;</code></pre>
+	&lt;div class="ui button"&gt;
+		&lt;i class="heart icon"&gt;&lt;/i&gt;
+	&lt;/div&gt;
+	&lt;a class="ui basic label"&gt;1024&lt;/a&gt;
+&lt;/div&gt;
+&lt;button class="ui icon button"&gt;
+	&lt;i class="cloud icon"&gt;&lt;/i&gt;
+&lt;/button&gt;
+&lt;button class="ui labeled icon button"&gt;
+	&lt;i class="right arrow icon"&gt;&lt;/i&gt;
+	Next
+&lt;/button&gt;</code></pre>
 				</div>
 			</div>
 			
@@ -135,6 +135,50 @@
 			</div>
 		</div>
 
+		<h2 class="ui dividing header">States</h2>
+		<div class="example">
+			<p>Button의 다음과 같은 States 속성을 사용합니다</p>
+			<p>사용가능한 속성은 아래와 같습니다</p>
+			<div class="ui bulleted list">
+			  <div class="item">active</div>
+			  <div class="item">loading</div>
+			</div>
+			
+			<div class="html ui top attached segment">
+				<button class="ui active button">
+					<i class="user icon"></i>
+					Follow
+				</button>
+				<button class="ui disabled button">
+					<i class="user icon"></i>
+					Follow
+				</button>
+				<button class="ui loading button">
+				</button>
+				<div class="ui top attached label">Markup & Example</div>
+			</div>
+			<div class="annotation transition visible">
+				<div class="ui instructive bottom attached segment">
+					<pre><code class="html">&lt;button class="ui active button"&gt;
+	&lt;i class="user icon"&gt;&lt;/i&gt;
+	Follow
+&lt;/button&gt;
+&lt;button class="ui disabled button"&gt;
+	&lt;i class="user icon"&gt;&lt;/i&gt;
+	Follow
+&lt;/button&gt;
+&lt;button class="ui loading button"&gt;
+&lt;/button&gt;</code></pre>
+				</div>
+			</div>
+			
+			<div class="ui piled segment">
+			  <h4 class="ui header">Prototype</h4>
+			  <pre><code class="html"0>&lt;button class="ui button" icon="user" active="true"&gt;Follow&lt;/button&gt;
+&lt;button class="ui button" icon="user" active="false"&gt;Follow&lt;/button&gt;
+&lt;button class="ui button" loading="true"&gt;&lt;/button&gt;</code></pre>
+			</div>
+		</div>
 
 
 	</div>
