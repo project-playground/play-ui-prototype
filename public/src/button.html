@@ -129,9 +129,9 @@
 			
 			<div class="ui piled segment">
 			  <h4 class="ui header">Prototype</h4>
-			  <pre><code class="html">&lt;div class="ui button" labeld="1024" icon="heart"&gt;&lt;/div&gt;
-&lt;button class="ui icon button" icon="cloud"&gt;&lt;/button&gt;
-&lt;button class="ui labeled icon button" labeledIcon="right arrow"&gt;Next&lt;/button&gt;</code></pre>
+			  <pre><code class="html">&lt;div class="ui Button" labeld="1024" icon="heart"&gt;&lt;/div&gt;
+&lt;Button class="ui icon Button" icon="cloud"&gt;&lt;/Button&gt;
+&lt;Button class="ui labeled icon Button" labeledIcon="right arrow"&gt;Next&lt;/Button&gt;</code></pre>
 			</div>
 		</div>
 
@@ -174,9 +174,193 @@
 			
 			<div class="ui piled segment">
 			  <h4 class="ui header">Prototype</h4>
-			  <pre><code class="html"0>&lt;button class="ui button" icon="user" active="true"&gt;Follow&lt;/button&gt;
-&lt;button class="ui button" icon="user" active="false"&gt;Follow&lt;/button&gt;
-&lt;button class="ui button" loading="true"&gt;&lt;/button&gt;</code></pre>
+			  <pre><code class="html"0>&lt;Button class="ui Button" icon="user" active="true"&gt;Follow&lt;/Button&gt;
+&lt;Button class="ui Button" icon="user" active="false"&gt;Follow&lt;/Button&gt;
+&lt;Button class="ui Button" loading="true"&gt;&lt;/Button&gt;</code></pre>
+			</div>
+		</div>
+
+		<h2 class="ui dividing header">Size</h2>
+		<div class="example">
+			<p>Button의 다음과 같은 Size 속성을 사용합니다</p>
+			<p>사용가능한 속성은 아래와 같습니다</p>
+			<div class="ui bulleted list">
+			  <div class="item">size</div>
+			</div>
+			
+			<div class="html ui top attached segment">
+				<button class="mini ui button">Mini</button>
+				<button class="tiny ui button">Tiny</button>
+				<button class="small ui button">Small</button>
+				<button class="medium ui button">Medium</button>
+				<button class="large ui button">Large</button>
+				<button class="big ui button">Big</button>
+				<button class="huge ui button">Huge</button>
+				<button class="massive ui button">Massive</button>
+				<div class="ui top attached label">Markup & Example</div>
+			</div>
+			<div class="annotation transition visible">
+				<div class="ui instructive bottom attached segment">
+					<pre><code class="html">&lt;button class="mini ui button"&gt;Mini&lt;/button&gt;
+&lt;button class="tiny ui button"&gt;Tiny&lt;/button&gt;
+&lt;button class="small ui button"&gt;Small&lt;/button&gt;
+&lt;button class="medium ui button"&gt;Medium&lt;/button&gt;
+&lt;button class="large ui button"&gt;Large&lt;/button&gt;
+&lt;button class="big ui button"&gt;Big&lt;/button&gt;
+&lt;button class="huge ui button"&gt;Huge&lt;/button&gt;
+&lt;button class="massive ui button"&gt;Massive&lt;/button&gt;</code></pre>
+				</div>
+			</div>
+			
+			<div class="ui piled segment">
+			  <h4 class="ui header">Prototype</h4>
+			  <pre><code class="html"0>&lt;Button size="mini"&gt;Mini&lt;/Button&gt;
+&lt;Button size="tiny"&gt;Tiny&lt;/Button&gt;
+&lt;Button size="small"&gt;Small&lt;/Button&gt;
+&lt;Button size="medium"&gt;Medium&lt;/Button&gt;
+&lt;Button size="large"&gt;Large&lt;/Button&gt;
+&lt;Button size="big"&gt;Big&lt;/Button&gt;
+&lt;Button size="huge"&gt;Huge&lt;/Button&gt;
+&lt;Button size="massive"&gt;Massive&lt;/Button&gt;</code></pre>
+			</div>
+		</div>
+
+		<h2 class="ui dividing header">Floated</h2>
+		<div class="example">
+			<p>Button의 다음과 같은 Floated 속성을 사용합니다</p>
+			<p>사용가능한 속성은 아래와 같습니다</p>
+			<div class="ui bulleted list">
+			  <div class="item">floated</div>
+			</div>
+			
+			<div class="html ui top attached segment">
+				<button class="ui right floated button">Right Floated</button>
+				<button class="ui left floated button">Left Floated</button>
+				<div class="ui top attached label">Markup & Example</div>
+			</div>
+			<div class="annotation transition visible">
+				<div class="ui instructive bottom attached segment">
+					<pre><code class="html">&lt;button class="ui right floated button"&gt;Right Floated&lt;/button&gt;
+&lt;button class="ui left floated button"&gt;Left Floated&lt;/button&gt;</code></pre>
+				</div>
+			</div>
+			
+			<div class="ui piled segment">
+			  <h4 class="ui header">Prototype</h4>
+			  <pre><code class="html"0>&lt;Button floated="right"&gt;Right Floated&lt;/Button&gt;
+&lt;Button floated="left"&gt;Left Floated&lt;/Button&gt;</code></pre>
+			</div>
+		</div>
+
+		<h2 class="ui dividing header">Colored</h2>
+		<div class="example">
+			<p>Button의 다음과 같은 Colored 속성을 사용합니다</p>
+			<p>사용가능한 속성은 아래와 같습니다</p>
+			<div class="ui bulleted list">
+			  <div class="item">colored</div>
+			</div>
+			
+			<div class="html ui top attached segment">
+				<button class="ui red button">Red</button>
+<button class="ui orange button">Orange</button>
+<button class="ui yellow button">Yellow</button>
+<button class="ui olive button">Olive</button>
+<button class="ui green button">Green</button>
+<button class="ui teal button">Teal</button>
+<button class="ui blue button">Blue</button>
+<button class="ui violet button">Violet</button>
+<button class="ui purple button">Purple</button>
+<button class="ui pink button">Pink</button>
+<button class="ui brown button">Brown</button>
+<button class="ui grey button">Grey</button>
+<button class="ui black button">Black</button>
+				<div class="ui top attached label">Markup & Example</div>
+			</div>
+			<div class="annotation transition visible">
+				<div class="ui instructive bottom attached segment">
+					<pre><code class="html">&lt;button class="ui red button"&gt;Red&lt;/button&gt;
+&lt;button class="ui orange button"&gt;Orange&lt;/button&gt;
+&lt;button class="ui yellow button"&gt;Yellow&lt;/button&gt;
+&lt;button class="ui olive button"&gt;Olive&lt;/button&gt;
+&lt;button class="ui green button"&gt;Green&lt;/button&gt;
+&lt;button class="ui teal button"&gt;Teal&lt;/button&gt;
+&lt;button class="ui blue button"&gt;Blue&lt;/button&gt;
+&lt;button class="ui violet button"&gt;Violet&lt;/button&gt;
+&lt;button class="ui purple button"&gt;Purple&lt;/button&gt;
+&lt;button class="ui pink button"&gt;Pink&lt;/button&gt;
+&lt;button class="ui brown button"&gt;Brown&lt;/button&gt;
+&lt;button class="ui grey button"&gt;Grey&lt;/button&gt;
+&lt;button class="ui black button"&gt;Black&lt;/button&gt;</code></pre>
+				</div>
+			</div>
+			
+			<div class="ui piled segment">
+			  <h4 class="ui header">Prototype</h4>
+			  <pre><code class="html"0>&lt;Button colored="red"&gt;Red&lt;/Button&gt;
+&lt;Button colored="orange"&gt;Orange&lt;/Button&gt;
+&lt;Button colored="yellow"&gt;Yellow&lt;/Button&gt;
+&lt;Button colored="olive"&gt;Olive&lt;/Button&gt;
+&lt;Button colored="green"&gt;Green&lt;/Button&gt;
+&lt;Button colored="teal"&gt;Teal&lt;/Button&gt;
+&lt;Button colored="blue"&gt;Blue&lt;/Button&gt;
+&lt;Button colored="violet"&gt;Violet&lt;/Button&gt;
+&lt;Button colored="purple"&gt;Purple&lt;/Button&gt;
+&lt;Button colored="pink"&gt;Pink&lt;/Button&gt;
+&lt;Button colored="brown"&gt;Brown&lt;/Button&gt;
+&lt;Button colored="grey"&gt;Grey&lt;/Button&gt;
+&lt;Button colored="black"&gt;Black&lt;/Button&gt;</code></pre>
+			</div>
+		</div>
+
+		<h2 class="ui dividing header">Toggle</h2>
+		<div class="example">
+			<p>Button의 다음과 같은 Toggle 속성을 사용합니다</p>
+			<p>사용가능한 속성은 아래와 같습니다</p>
+			<div class="ui bulleted list">
+			  <div class="item">toggle</div>
+			</div>
+			
+			<div class="html ui top attached segment">
+				<button class="ui toggle button">Vote</button>
+				<div class="ui top attached label">Markup & Example</div>
+			</div>
+			<div class="annotation transition visible">
+				<div class="ui instructive bottom attached segment">
+					<pre><code class="html">&lt;button class="ui toggle button"&gt;Vote&lt;/button&gt;</code></pre>
+				</div>
+			</div>
+			
+			<div class="ui piled segment">
+			  <h4 class="ui header">Prototype</h4>
+			  <pre><code class="html"0>&lt;Button toggle="true"&gt;Vote&lt;/Button&gt;</code></pre>
+			</div>
+		</div>
+
+		<h2 class="ui dividing header">Circular</h2>
+		<div class="example">
+			<p>Button의 다음과 같은 Circular 속성을 사용합니다</p>
+			<p>사용가능한 속성은 아래와 같습니다</p>
+			<div class="ui bulleted list">
+			  <div class="item">circular</div>
+			</div>
+			
+			<div class="html ui top attached segment">
+				<button class="circular ui icon button">
+  <i class="icon settings"></i>
+</button>
+				<div class="ui top attached label">Markup & Example</div>
+			</div>
+			<div class="annotation transition visible">
+				<div class="ui instructive bottom attached segment">
+					<pre><code class="html">&lt;button class="circular ui icon button"&gt;
+  &lt;i class="icon settings"&gt;&lt;/i&gt;
+&lt;/button&gt;</code></pre>
+				</div>
+			</div>
+			
+			<div class="ui piled segment">
+			  <h4 class="ui header">Prototype</h4>
+			  <pre><code class="html"0>&lt;Button circular="true" icon="settings"&gt;&lt;/Button&gt;</code></pre>
 			</div>
 		</div>
 
