@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>play-ui prototype - Buttons</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link rel="stylesheet" type="text/css" href="lib/semantic/semantic.min.css">
+	<link rel="stylesheet" type="text/css" href="css/docs.css">
+	<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+	<script src="lib/semantic/semantic.min.js"></script>
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/styles/github.min.css">
+	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/highlight.min.js"></script>
+	<script src="js/script.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+</head>
+<body id="example">
+	<div class="ui container">
+		<div class="ui breadcrumb right item">
+		  <a class="section" href="index.html">Home</a>
+		  <i class="right angle icon divider"></i>
+		  <a class="section">Component</a>
+		  <i class="right angle icon divider"></i>
+		  <a class="section">UI Component</a>
+		  <i class="right angle icon divider"></i>
+		  <div class="active section">Group</a>			
+		</div>
+	</div>
+	<div class="ui masthead vertical segment">
+
+		<div class="ui container">
+			<h1 class="ui header">Group</h1>
+			<div class="sub header">Group Component의 Prototype</div>
+		</div>
+	</div>
+
+	<div class="ui main container">
+		<h2 class="ui dividing header">button group</h2>
+		<div class="example">
+			<p>button group은 다음과 같이 생성합니다</p>
+			<p>button group은 div markup에 <b>buttons</b> class를 사용합니다</p>
+			
+			<div class="html ui top attached segment">
+<div class="ui buttons">
+  <button class="ui button">One</button>
+  <button class="ui button">Two</button>
+  <button class="ui button">Three</button>
+</div><div class="ui top attached label">Markup & Example</div></div>
+			<div class="annotation transition visible">
+				<div class="ui instructive bottom attached segment">
+					<pre><code class="html">&lt;div class="ui buttons"&gt;
+  &lt;button class="ui button"&gt;One&lt;/button&gt;
+  &lt;button class="ui button"&gt;Two&lt;/button>
+  &lt;button class="ui button">Three&lt;/button>
+&lt;/div&gt;</code></pre>
+				</div>
+			</div>
+			
+			<div class="ui piled segment">
+			  <h4 class="ui header">Prototype</h4>
+			  <pre><code class="html">&lt;Buttons&gt;
+  &lt;Button &gt;One&lt;/Button&gt;
+  &lt;Button &gt;Two&lt;/Button&gt;
+  &lt;Button &gt;Three&lt;/Button&gt;
+&lt;/Buttons&gt;</code></pre>
+			</div>
+		</div>
+
+		<h2 class="ui dividing header">group direction</h2>
+			<div class="example">
+				<p>group 의 방향을 설정하는 속성입니다.</p>
+				<div class="ui bulleted list">
+				  <div class="item">groupDir</div>
+				</div>
+				
+				<div class="html ui top attached segment">
+<div class="ui buttons">
+  <button class="ui button">One</button>
+  <button class="ui button">Two</button>
+  <button class="ui button">Three</button>
+</div>
+<div class="ui vertical buttons">
+  <button class="ui button">One</button>
+  <button class="ui button">Two</button>
+  <button class="ui button">Three</button>
+</div>					<div class="ui top attached label">Markup & Example</div>
+				</div>
+				<div class="annotation transition visible">
+					<div class="ui instructive bottom attached segment">
+						<pre><code class="html">&lt;div class="ui buttons"&gt;
+  &lt;button class="ui button"&gt;One&lt;/button&gt;
+  &lt;button class="ui button"&gt;Two&lt;/button>
+  &lt;button class="ui button">Three&lt;/button>
+&lt;/div&gt;
+&lt;div class="ui vertical buttons"&gt;
+  &lt;button class="ui button"&gt;One&lt;/button&gt;
+  &lt;button class="ui button"&gt;Two&lt;/button>
+  &lt;button class="ui button">Three&lt;/button>
+&lt;/div&gt;
+</code></pre>
+				</div>
+			</div>
+			
+			<div class="ui piled segment">
+			  <h4 class="ui header">Prototype</h4>
+			  <pre><code class="html">&lt;Buttons&gt;
+  &lt;Button &gt;One&lt;/Button&gt;
+  &lt;Button &gt;Two&lt;/Button&gt;
+  &lt;Button &gt;Three&lt;/Button&gt;
+&lt;/Buttons&gt;
+&lt;Buttons groupDir="vertical"&gt;
+  &lt;Button &gt;One&lt;/Button&gt;
+  &lt;Button &gt;Two&lt;/Button&gt;
+  &lt;Button &gt;Three&lt;/Button&gt;
+&lt;/Buttons&gt;
+</code></pre>
+				</div>
+			</div>
+		</div>
+		
+		<h2 class="ui dividing header">icon button group</h2>
+		<div class="example">
+			<p>icon button group은 다음과 같이 생성합니다</p>
+			<p>button group은 div markup에 <b>icon buttons</b> class를 사용합니다</p>
+			
+			<div class="html ui top attached segment">
+<div class="ui icon buttons">
+  <button class="ui button"><i class="align left icon"></i></button>
+  <button class="ui button"><i class="align center icon"></i></button>
+  <button class="ui button"><i class="align right icon"></i></button>
+  <button class="ui button"><i class="align justify icon"></i></button>
+</div>
+<div class="ui icon buttons">
+  <button class="ui button"><i class="bold icon"></i></button>
+  <button class="ui button"><i class="underline icon"></i></button>
+  <button class="ui button"><i class="text width icon"></i></button>
+</div><div class="ui top attached label">Markup & Example</div></div>
+			<div class="annotation transition visible">
+				<div class="ui instructive bottom attached segment">
+					<pre><code class="html">&lt;div class="ui icon buttons"&gt;
+  &lt;button class="ui button"&gt;&lt;i class="align left icon"&gt;&lt;/i&gt;&lt;/button&gt;
+  &lt;button class="ui button"&gt;&lt;i class="align center icon"&gt;&lt;/i&gt;&lt;/button&gt;
+  &lt;button class="ui button"&gt;&lt;i class="align right icon"&gt;&lt;/i&gt;&lt;/button&gt;
+  &lt;button class="ui button"&gt;&lt;i class="align justify icon"&gt;&lt;/i&gt;&lt;/button&gt;
+&lt;/div&gt;
+&lt;div class="ui icon buttons"&gt;
+  &lt;button class="ui button"&gt;&lt;i class="bold icon"&gt;&lt;/i&gt;&lt;/button&gt;
+  &lt;button class="ui button"&gt;&lt;i class="underline icon"&gt;&lt;/i&gt;&lt;/button&gt;
+  &lt;button class="ui button"&gt;&lt;i class="text width icon"&gt;&lt;/i&gt;&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+				</div>
+			</div>
+			
+			<div class="ui piled segment">
+			  <h4 class="ui header">Prototype</h4>
+			  <pre><code class="html">&lt;IconButtons&gt;
+  &lt;Button icon="align left"&gt;&lt;/Button&gt;
+  &lt;Button icon="align center"&gt;&lt;/Button&gt;
+  &lt;button icon="align right"&gt;&lt;/Button&gt;
+  &lt;button icon="align justify"&gt;&lt;/Button&gt;
+&lt;/IconButtons&gt;
+&lt;IconButtons&gt;
+  &lt;Button icon="bold"&gt;&lt;/Button&gt;
+  &lt;Button icon="underline"&gt;&lt;/Button&gt;
+  &lt;Button icon="text width"&gt;&lt;/Button&gt;
+&lt;/IconButtons&gt;</code></pre>
+			</div>
+		</div>
+		
+	</div>
+
+</body>
+</html>
